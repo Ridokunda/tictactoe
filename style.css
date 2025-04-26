@@ -30,4 +30,39 @@ body {
     margin-top: 20px;
     font-size: 1.5em;
   }
+
+  #gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .square {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .square.highlight {
+    background-color: #4caf50; /* Green highlight for win */
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .controls {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #restartBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
   
